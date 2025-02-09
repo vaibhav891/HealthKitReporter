@@ -164,7 +164,7 @@ extension HKCategorySample: Harmonizable {
              .vomiting,
              .wheezing:
             if #available(iOS 13.6, *) {
-                if let value = HKCategoryValuePresence(rawValue: value) {
+                if let value = HKCategoryValueSeverity(rawValue: value) {
                     description = value.description
                     detail = value.detail
                 }
